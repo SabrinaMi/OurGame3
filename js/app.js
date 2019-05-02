@@ -2,8 +2,8 @@ let winner = false;
 
 $( document ).ready(function() {
 
-    let player1='<i class="fa fa-times"></i>';
-    let player2='<i class="fa fa-circle"></i>';
+    let player1='<i class="fa fa-times checked"></i>';
+    let player2='<i class="fa fa-circle checked"></i>';
 
     let username1 = $('#username1').val();
     let username2 = $('#username2').val();
@@ -19,18 +19,31 @@ $( document ).ready(function() {
     sqr.on('click',function (event) {
         movesMade++;
 
-        /*if current turns equal to one we know its player's turn*/
+        //*if current turns equal to one we know its player's turn*/
+        // i habs
         if (currentTurn ===1){
-            event.target.innerHTML = player1;
-            event.target.style.color = "#fea8b3";
-            event.target.style.background = "#9a8262";
-            currentTurn++;
-        }else{
-            event.target.innerHTML = player2;
-            event.target.style.color = "#5b5426";
-            event.target.style.background = "#e8ca93";
-            currentTurn--;
+            /**
+             * target --> beispiel 1) button, parent: null, children: icon
+             * target --> beispiel 2) icon, parent: button, children: null
+             */
+            if(!event.target.classList.contains('checked')) {
+                console.log(event.target.classList.contains('checked'))
+                console.log(event.target.parentNode.classList.contains('checked'))
 
+                event.target.innerHTML = player1;
+                event.target.style.color = "#fea8b3";
+                event.target.style.background = "#9a8262";
+                event.target.classList += ' checked';
+                currentTurn++;
+            }
+        }else{
+            if(!event.target.classList.contains('checked')) {
+                event.target.innerHTML = player2;
+                event.target.style.color = "#5b5426";
+                event.target.style.background = "#e8ca93";
+                event.target.classList += ' checked';
+                currentTurn--;
+            }
         }
 
         if(!winner) {
@@ -68,7 +81,7 @@ $( document ).ready(function() {
     //fetch the data, to display in highscore class
    function fetchHighscoreData(data){
        $.ajax({
-           url: "/OurGame2/index",
+           url: "/OurGame3/index",
            method: "POST",
            data: data
        });

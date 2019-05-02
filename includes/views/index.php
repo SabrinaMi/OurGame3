@@ -9,8 +9,8 @@ echo $this->header;
         <div class ="title">TIC TAC TOE</div>
         <div class="btn-group">
             <button class="btn btn-info m-4" onclick="window.location.reload()">Try refreshing!</button>
-            <button class="btn btn-success m-4" onclick="window.location='/OurGame2/highscore'">Zum Highscore!</button>
-            <button class="btn btn-danger m-4" onclick="window.location='/OurGame2/logout'">Ausloggen!</button>
+            <button class="btn btn-success m-4" onclick="window.location='/OurGame3/highscore'">Zum Highscore!</button>
+            <button class="btn btn-danger m-4" onclick="window.location='/OurGame3/logout'">Ausloggen!</button>
         </div>
         <div style="font-size: 14pt; background-color: rgba(255,255,255,0.5); padding: 5px; margin-top: 5px;">
             Spieler 1: <?php echo $this->username1 ?><br>
