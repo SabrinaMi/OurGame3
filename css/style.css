@@ -1,4 +1,5 @@
 html,
+/*Hier wird der hintergrund festgelegt*/
 body{
     height: 100%;
     font-family: 'Josefin Slab', serif;
@@ -7,7 +8,7 @@ body{
     margin: 0;
 }
 
-
+/*flexboxen*/
 .flex-container{
     display: flex;
 }
@@ -22,6 +23,7 @@ body{
     align-items: center;
 }
 
+/*Gewinner textbox*/
 #winner-display > h1 {
     font-family: 'Josefin Slab', serif;
 }
@@ -39,7 +41,6 @@ body{
     height: auto;
     padding: 10px 30px 10px 30px;
 }
-
 .credits{
     font-family: 'Josefin Slab', serif;
     color: #eee2dc;

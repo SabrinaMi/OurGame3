@@ -65,7 +65,7 @@ $( document ).ready(function() {
         }
     });
 
-    //fetch the data, to display in highscore class
+    /*fetch the data, to display in highscore class*/
    function fetchHighscoreData(data){
        $.ajax({
            url: "/OurGame2/index",
@@ -73,7 +73,7 @@ $( document ).ready(function() {
            data: data
        });
     }
-
+    /*check for winner after 4 moves+*/
     function checkForWinner(movesMade) {
         if (movesMade>4) {
             let moves = Array.prototype.slice.call($(".square"));
