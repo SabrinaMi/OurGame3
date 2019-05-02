@@ -1,5 +1,6 @@
 let winner = false;
-
+ /* Code included inside $( document ).ready() will only run once the page Document Object Model
+  *is ready for JavaScript code to execute*/
 $( document ).ready(function() {
 
     let player1='<i class="fa fa-times"></i>';
@@ -33,6 +34,7 @@ $( document ).ready(function() {
 
         }
 
+        /*Der gewinner bekommt 100 pt, der verlierer 50 pt*/
         if(!winner) {
             if (checkForWinner(movesMade)) {
                 let theWinner = currentTurn === 1 ? player2 : player1;
@@ -81,6 +83,7 @@ $( document ).ready(function() {
                 return square.innerHTML;
             });
 
+            /*Die Winning combos welche  möglich sind*/
             let winningCombos = [
                 [0, 1, 2],
                 [3, 4, 5],
