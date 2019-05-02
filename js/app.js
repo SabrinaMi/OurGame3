@@ -1,6 +1,5 @@
 let winner = false;
- /* Code included inside $( document ).ready() will only run once the page Document Object Model
-  *is ready for JavaScript code to execute*/
+ /* Code included inside $( document ).ready() will only run once the page Document Object Model is ready for JavaScript code to execute*/
 $( document ).ready(function() {
 
     let player1='<i class="fa fa-times"></i>';
