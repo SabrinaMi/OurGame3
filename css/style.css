@@ -1,0 +1,116 @@
+html,
+body{
+    height: 100%;
+    font-family: 'Josefin Slab', serif;
+    background-image: url("../img/palm_tree_branches_pastel_128581_2048x1152.jpg");
+    background-size: auto auto;
+    margin: 0;
+}
+
+
+.flex-container{
+    display: flex;
+}
+.flex-column{
+    flex-direction: column;
+}
+.flex-wrap{
+    flex-wrap: wrap;
+}
+.flex-center{
+    justify-content: center;
+    align-items: center;
+}
+
+#winner-display > h1 {
+    font-family: 'Josefin Slab', serif;
+}
+
+/*Textboxen*/
+.title{
+    font-family: 'Josefin Slab', serif;
+    color: #ac3b61;
+    font-size: 36pt;
+    margin-bottom: 40px;
+    background-color: #eee2dc;
+    font-weight: bold;
+    border-radius: 30px;
+    width: auto;
+    height: auto;
+    padding: 10px 30px 10px 30px;
+}
+
+.credits{
+    font-family: 'Josefin Slab', serif;
+    color: #eee2dc;
+    text-align: center;
+    justify-content: center;
+
+    background-color: rgba(119, 119, 119, 0.5);
+    opacity: 50%;
+    padding: 10px 30px 10px 30px;
+    border-radius: 30px;
+    margin-top: 40px;
+}
+
+.board-container{
+    height: 100%;
+    width: 100%;
+}
+
+/*Ecken der Boxen abgerundet*/
+.rounded-corners{
+    border-radius: 30px 30px 30px 30px;
+}
+
+/*Space zwischen den Boxen*/
+.top-left-filler{
+    margin-right: 10px;
+}
+.mid-left-filler{
+    margin-right: 10px;
+}
+.bottom-left-filler{
+     margin-right: 10px;
+ }
+
+.top-mid-filler{
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+.mid-mid-filler{
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+.bottom-mid-filler{
+    margin-right: 10px;
+}
+
+.top-right-filler{
+    margin-bottom: 10px;
+}
+.mid-right-filler{
+    margin-bottom: 10px;
+}
+
+
+/*Spielfeldbreite begrenzen*/
+.board{
+    width: 506px;
+}
+
+/*Boxen definieren*/
+.square{
+    width: 150px;
+    height: 150px;
+    border: 6px solid #edc7b7;
+    background-color: #eee2dc;
+    font-family: "Font awesome";
+    font-size: 80px;
+}
+.square:hover{
+    background-color: #ac3b61;
+}
+
+
+
